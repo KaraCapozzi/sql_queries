@@ -1,0 +1,31 @@
+1. Album.where(artist: {name: "Queen"})
+
+
+2. Tracks.count(media_type_id: "Protected MPEG-4 video file)
+
+Track.where(media_type: MediaType.where(name: "Protected MPEG-4 video file")).count
+
+3.  Genre.find_each do |a|
+puts a.name
+if a == "Hip Hop/Rap"
+else puts "Not found"
+end
+end
+
+4.  Album.where(genre: "Hip Hop/Rap")
+
+5.  Track.sum("milliseconds")
+
+6.   Track.maximum(:unit_price)
+
+7.  no age? 
+
+8. Track.minimum(:unit_price)
+
+9.  
+Find the least expensive track that has the 
+genre "Electronica/Dance".
+
+10.
+Find all "MPEG autio file" tracks in the 
+genre "Electronica/Dance".
